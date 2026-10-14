@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang='it'>
+
+<head>
+    <!-- essential meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <!-- page info -->
+    <title>Form di registrazione</title>
+    <meta name='description'
+        content='Pagina composta da un form di 15 diversi campi da compilare con ognuno un tipo di input differente'>
+    <meta name='author' content='Gaia Giachero'>
+
+    <!-- open graph - social media -->
+    <meta property='og:type' content='website'>
+    <meta property='og:title' content='Form di registrazione'>
+    <meta property='og:description'
+        content='Pagina composta da un form di 15 diversi campi da compilare con ognuno un tipo di input differente'>
+    <!-- <meta property='og:image' content='https://yourwebsite.com/image.jpg'> -->
+    <meta property='og:url' content='https://form-registrazione.com'>
+
+    <!-- stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="bg-light py-5">
+
+    <div class="container" style="max-width: 720px;">
+
+        <h1 class="mb-4 text-center">Form registrazione</h1>
+
+        <main>
+            <form action="https://webhook.site/f5e4c8d0-60cb-4723-baa9-53c5e1fdd462" method="POST" id="registrationForm"
+                novalidate>
+
+                <!-- DATI ANAGRAFICI -->
+                <fieldset class="card mb-4">
+                    <legend class="card-header fw-bold fs-6 text-uppercase bg-primary text-white">Dati anagrafici</legend>
+                    <div class="card-body row g-3">
+
+                        <!-- TEXT (nome) -->
+                        <div class="col-md-6">
+                            <label class="form-label" for="nome">Nome *</label>
+                            <input class="form-control" type="text" id="nome" name="nome" placeholder="Es. Mario"
+                                minlength="2" maxlength="30" required>
+                            <div class="invalid-feedback">Inserisci un nome valido (2–30 caratteri).</div>
+                        </div>
+
+                        <!-- TEXT (cognome) -->
+                        <div class="col-md-6">
+                            <label class="form-label" for="cognome">Cognome *</label>
+                            <input class="form-control" type="text" id="cognome" name="cognome" placeholder="Es. Rossi"
+                                minlength="2" maxlength="30" required>
+                            <div class="invalid-feedback">Inserisci un cognome valido (2–30 caratteri).</div>
+                        </div>
+
+                        <!-- DATE -->
+                        <div class="col-md-6">
+                            <label class="form-label" for="data_nascita">Data di nascita *</label>
+                            <input class="form-control" type="date" id="data_nascita" name="data_nascita"
+                                min="1924-01-01" max="2008-12-31" required>
+                            <div class="invalid-feedback">Inserisci una data valida (1924–2008).</div>
+                        </div>
+
+                        <!-- NUMBER -->
+                        <div class="col-md-6">
+                            <label class="form-label" for="eta">Età *</label>
+                            <input class="form-control" type="number" id="eta" name="eta" placeholder="Es. 25"
+                                min="18" max="99" required>
+                            <div class="invalid-feedback">L'età deve essere compresa tra 18 e 99.</div>
+                        </div>
+
+                        <!-- RADIO -->
+                        <div class="col-12">
+                            <label class="form-label d-block">Genere *</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="genere_m" name="genere" value="M"
+                                    required>
+                                <label class="form-check-label" for="genere_m">Maschio</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="genere_f" name="genere" value="F">
+                                <label class="form-check-label" for="genere_f">Femmina</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="genere_altro" name="genere"
+                                    value="altro">
+                                <label class="form-check-label" for="genere_altro">Preferisco non specificare</label>
+                            </div>
+                            <div class="invalid-feedback">Seleziona un'opzione.</div>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <!-- DATI ACCESSO -->
+                <fieldset class="card mb-4">
+                    <legend class="card-header fw-bold fs-6 text-uppercase bg-primary text-white">Dati accesso</legend>
+                    <div class="card-body row g-3">
+
+                        <!-- EMAIL -->
+                        <div class="col-12">
+                            <label class="form-label" for="email">Email *</label>
+                            <input class="form-control" type="email" id="email" name="email"
+                                placeholder="esempio@email.com" required>
+                            <div class="invalid-feedback">Inserisci un indirizzo email valido.</div>
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="col-12">
+                            <label class="form-label" for="password">Password *</label>
+                            <input class="form-control" type="password" id="password" name="password"
+                                placeholder="Minimo 8 caratteri" required minlength="8" maxlength="32"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            <!-- regex
+                                (?=.*\d)      → almeno un numero
+                                (?=.*[a-z])   → almeno una lettera minuscola
+                                (?=.*[A-Z])   → almeno una lettera maiuscola
+                                .{8,}         → minimo 8 caratteri
+                            -->
+                            <div class="invalid-feedback">Min. 8 caratteri con almeno una maiuscola, una minuscola e un
+                                numero.</div>
+                        </div>
+
+                        <!-- TEL -->
+                        <div class="col-12">
+                            <label class="form-label" for="telefono">Telefono *</label>
+                            <input class="form-control" type="tel" id="telefono" name="telefono"
+                                placeholder="Es. +39 333 1234567" required pattern="[\+]?[0-9\s\-]{8,15}">
+                            <div class="invalid-feedback">Inserisci un numero di telefono valido (8–15 cifre).</div>
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <!-- DATI PROFILO -->
+                <fieldset class="card mb-4">
+                    <legend class="card-header fw-bold fs-6 text-uppercase bg-primary text-white">Dati profilo</legend>
+                    <div class="card-body row g-3">
+
+                        <!-- URL -->
+                        <div class="col-12">
+                            <label class="form-label" for="sito_web">Sito web</label>
+                            <input class="form-control" type="url" id="sito_web" name="sito_web"
+                                placeholder="https://www.esempio.com">
+                            <div class="invalid-feedback">Inserisci un URL valido (es. https://...).</div>
+                        </div>
+
+                        <!-- RANGE -->
+                        <div class="col-12">
+                            <label class="form-label" for="esperienza">
+                                Livello di esperienza (1–10):
+                                <span id="esperienza_valore" class="fw-bold">5</span>
+                            </label>
+                            <input class="form-range" type="range" id="esperienza" name="esperienza" min="1" max="10"
+                                value="5">
+                        </div>
+
+                        <!-- CHECKBOX -->
+                        <div class="col-12">
+                            <label class="form-label d-block">Interessi (seleziona almeno uno) *</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="interesse_web" name="interessi"
+                                    value="web">
+                                <label class="form-check-label" for="interesse_web">Sviluppo Web</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="interesse_mobile" name="interessi"
+                                    value="mobile">
+                                <label class="form-check-label" for="interesse_mobile">Mobile</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="interesse_ai" name="interessi"
+                                    value="ai">
+                                <label class="form-check-label" for="interesse_ai">Intelligenza Artificiale</label>
+                            </div>
+                            <div id="interessi_feedback" class="text-danger small mt-1" style="display: none;">
+                                Seleziona almeno un interesse.
+                            </div>
+                        </div>
+
+                        <!-- SELECT -->
+                        <div class="col-md-6">
+                            <label class="form-label" for="paese">Paese *</label>
+                            <select class="form-select" id="paese" name="paese" required>
+                                <option value="">-- Seleziona un paese --</option>
+                                <option value="IT">Italia</option>
+                                <option value="FR">Francia</option>
+                                <option value="DE">Germania</option>
+                                <option value="ES">Spagna</option>
+                                <option value="UK">Regno Unito</option>
+                            </select>
+                            <div class="invalid-feedback">Seleziona un paese.</div>
+                        </div>
+
+                        <!-- COLOR -->
+                        <div class="col-md-6">
+                            <label class="form-label" for="colore_preferito">Colore preferito</label>
+                            <input class="form-control form-control-color w-100" type="color" id="colore_preferito"
+                                name="colore_preferito" value="#4a90d9" title="Scegli il tuo colore preferito">
+                        </div>
+
+                        <!-- TEXTAREA -->
+                        <div class="col-12">
+                            <label class="form-label" for="biografia">Biografia</label>
+                            <textarea class="form-control" id="biografia" name="biografia"
+                                placeholder="Descrivi brevemente te stesso..." rows="4" minlength="10"
+                                maxlength="300"></textarea>
+                            <div class="invalid-feedback">La biografia deve contenere tra 10 e 300 caratteri.</div>
+                        </div>
+
+                        <!-- FILE -->
+                        <div class="col-12">
+                            <label class="form-label" for="avatar">Foto profilo</label>
+                            <input class="form-control" type="file" id="avatar" name="avatar"
+                                accept="image/png, image/jpeg, image/webp">
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <!-- BOTTONI -->
+                <div class="d-flex justify-content-between">
+                    <button type="reset" class="btn btn-outline-secondary fw-bold">Cancella</button>
+                    <button type="submit" class="btn btn-primary fw-bold">Invia</button>
+                </div>
+
+            </form>
+        </main>
+
+    </div><!-- /container -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Aggiorna il valore visualizzato del range in tempo reale
+        const rangeInput = document.getElementById('esperienza');
+        const rangeValore = document.getElementById('esperienza_valore');
+        rangeInput.addEventListener('input', () => {
+            rangeValore.textContent = rangeInput.value;
+        });
+    </script>
+
+</body>
+
+</html>
