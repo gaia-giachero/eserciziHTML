@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- essential meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- page info -->
+    <title>Diario dei Sapori</title>
+    <meta name="description" content="ricettario interattivo in quanto si possono vedere le ricette, aggiungere nuove ricette, commentare e lasciare feedback">
+    <meta name="author" content="Gaia Giachero">
+
+    <!-- open graph - social media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Diario dei Sapori">
+    <meta property="og:description" content="ricettario interattivo in quanto si possono vedere le ricette, aggiungere nuove ricette, commentare e lasciare feedback">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <img src="./assets/img/logo.png" alt="logo">
+            <h1>IL DIARIO DEI SAPORI</h1>
+        </div>
+        <!-- MENU -->
+        <div class="header-right">
+            <div class="menu-wrap">
+                <button class="menu-nascosto" id="menu">Menu &rarr;</button>
+                <nav class="menu-cascata">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#ricette">Lista Ricette</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                        <li><a href="#account">Account</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <aside id="account">
+                <img src="./assets/img/users.png" alt="immagine profilo">
+                <div>
+                    <p>gaia_giachero</p>
+                    <a href="#">Ricette salvate</a>
+                    <a href="#">Ricette condivise</a>
+                </div>
+            </aside>
+            <article id="ricette">
+                <div>
+                    <h1>Avocado toast con uovo in camicia</h1>
+                    <a href="#avocado-toast">&darr;</a>
+                </div>
+                <div>
+                    <h1>Pasta cremosa ricotta e spinaci</h1>
+                    <a href="#pasta-ricotta-spinaci">&darr;</a>
+                </div>
+                <div>
+                    <h1>Wrap di pollo e yogurt</h1>
+                    <a href="#wrap">&darr;</a>
+                </div>
+                <div>
+                    <h1>Mug cake al cioccolato</h1>
+                    <a href="#mug-cioccolato">&darr;</a>
+                </div>
+            </article>
+            <article id="feedback">
+                <textarea placeholder="Scrivi un commento o fai una domanda..."></textarea>
+                <button type="submit">Invia</button>
+            </article>    
+        </section>
+
+        <section id="ricettario">
+            <article id="avocado-toast">
+                <h1>Avocado toast con uovo in camicia</h1>
+                <h2>Ingredienti:</h2>
+                <ul>
+                    <li>2 fette di pane</li>
+                    <li>1 avocado maturo</li>
+                    <li>2 uova</li>
+                    <li>succo di limone</li>
+                    <li>sale, pepe</li>
+                    <li>semi (sesamo o chia, facoltativi)</li>
+                </ul>
+                <h2>Procedimento:</h2>
+                <ol>
+                    <li>Schiaccia l’avocado con limone, sale e pepe.</li>
+                    <li>Tosta il pane.</li>
+                    <li>Prepara l’uovo in camicia (3 min in acqua bollente con un filo di aceto).</li>
+                    <li>Spalma l’avocado sul pane e aggiungi l’uovo sopra.</li>
+                    <li>Completa con semi o spezie.</li>
+                </ol>
+                <img src="./assets/img/avocado-toast.png" alt="immagine piatto finito">
+            </article>
+
+            <article id="pasta-ricotta-spinaci">
+                <h1>Pasta cremosa ricotta e spinaci</h1>
+                <h2>Ingredienti:</h2>
+                <ul>
+                    <li>200 g di pasta</li>
+                    <li>150 g di ricotta</li>
+                    <li>100 g di spinaci freschi o surgelati</li>
+                    <li>parmigiano grattugiato</li>
+                    <li>sale, pepe</li>
+                </ul>
+                <h2>Procedimento:</h2>
+                <ol>
+                    <li>Cuoci la pasta.</li>
+                    <li>Salta gli spinaci in padella finché appassiscono.</li>
+                    <li>Aggiungi ricotta e un po’ di acqua di cottura della pasta.</li>
+                    <li>Unisci la pasta e mescola fino a ottenere una crema.</li>
+                    <li>Aggiungi parmigiano e servi.</li>
+                </ol>
+                <img src="./assets/img/pasta-ricotta-spinaci.png" alt="immagine piatto finito">
+            </article>
+
+            <article id="wrap">
+                <h1>Wrap di pollo e yogurt</h1>
+                <h2>Ingredienti:</h2>
+                <ul>
+                    <li>2 piadine o tortillas</li>
+                    <li>1 petto di pollo</li>
+                    <li>2 cucchiai di yogurt bianco</li>
+                    <li>insalata</li>
+                    <li>paprika o curry</li>
+                    <li>sale, olio</li>
+                </ul>
+                <h2>Procedimento:</h2>
+                <ol>
+                    <li>Cuoci il pollo a pezzetti con olio e spezie.</li>
+                    <li>Mescola yogurt con un pizzico di sale.</li>
+                    <li>Scalda le piadine.</li>
+                    <li>Farcisci con pollo, insalata e salsa yogurt.</li>
+                    <li>Arrotola e servi.</li>
+                </ol>
+                <img src="./assets/img/wrap.png" alt="immagine piatto finito">
+            </article>
+
+            <article id="mug-cioccolato">
+                <h1>Mug cake al cioccolato</h1>
+                <h2>Ingredienti:</h2>
+                <ul>
+                    <li>4 cucchiai di farina</li>
+                    <li>2 cucchiai di zucchero</li>
+                    <li>2 cucchiai di cacao</li>
+                    <li>3 cucchiai di latte</li>
+                    <li>2 cucchiai di olio</li>
+                    <li>1 pizzico di lievito</li>
+                </ul>
+                <h2>Procedimento:</h2>
+                <ol>
+                    <li>Mescola tutto direttamente in una tazza.</li>
+                    <li>Cuoci in microonde per circa 1 minuto e mezzo.</li>
+                    <li>Lascia intiepidire e gusta.</li>
+                </ol>
+                <img src="./assets/img/mug-cioccolato.png" alt="immagine piatto finito">
+            </article>
+        </section>
+
+        <footer id="footer">
+            <a href="#">Termini&amp;Condizioni</a>
+            <a href="#">Abbonati</a>
+            <a href="#">Assistenza</a>
+        </footer>
+    </main>
+</body>
+
+</html>
