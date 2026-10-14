@@ -1,0 +1,29 @@
+/* Generally rules */
+table, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+}
+
+/* === EXCERCIZE === */
+/* opzione 1: seleziona tutti gli elementi table data in pagina che sono il quarto figlio diretto 
+                di un elemento di tipo table row che è il terzo figlio del suo genitore
+tr:nth-child(3)>td:nth-child(4){
+    background-color: blue;
+} 
+*/
+
+/* se voglio sapere chi è il genitore */
+/* table tr:nth-child(3) > td:nth-child(4){
+    background-color: blue;
+}  
+*/
+
+/* opzione 2 */
+table > tbody > tr:nth-of-type(3) td:nth-of-type(4){
+    background-color: blue;
+} 

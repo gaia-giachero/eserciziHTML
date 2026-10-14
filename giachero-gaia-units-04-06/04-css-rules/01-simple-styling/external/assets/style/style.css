@@ -1,0 +1,148 @@
+:root {
+    --h1-color: #3772c1;
+    --h3-color: #5b8fd5;
+    --header-font: Georgia, 'Times New Roman', Times, serif;
+    --background-nav-color: #5b8fd5;
+    --nav-color: #c0d4ed;
+    --background-trip-color: #3772c180;
+    --background-box1-color: #5b8fd580;
+    --background-box2-color: #7bace780;
+    --background-box3-color: #97b5e980;
+    --background-box4-color: #a1c2e280;
+    --background-box5-color: #c0d4ed80;
+    --background-fix-color: #5b8fd5;
+}
+
+html {
+    scroll-padding-top: 185px;
+}
+
+body {
+    margin: 0px;
+    padding-top: 180px;
+}
+
+.fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    background-color: var(--background-fix-color);
+}
+
+main {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+p, ul li {
+    font-size: 1.2em;
+}
+
+h1 {
+    color: var(--h1-color);
+    font-family: var(--header-font); 
+    font-size: 60px; 
+    text-align: center; 
+    margin: 0px;
+    margin-top: 0.3em;
+    letter-spacing: 0.2em;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+h2 {
+    font-family: var(--header-font);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: var(--h3-color); 
+    font-family: var(--header-font);
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin: 0.5em;
+}
+
+nav {
+    background-color: var(--background-nav-color);
+    margin-top: 0.5em;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+nav a {
+    text-decoration: none; 
+    color: var(--nav-color);
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.images {
+    padding: 10px; 
+    text-align: center;
+}
+
+.images img {
+    width: 19%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box-trip {
+    background-color: var(--background-trip-color);
+    width: 95%;
+    padding: 1em;
+    text-align: center;
+}
+
+.box1, .box2, .box5 {
+    background-color: var(--background-box1-color);
+    width: 30%;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.box2 {
+    background-color: var(--background-box2-color);
+}
+
+.box5 {
+    background-color: var(--background-box5-color);
+}
+
+.box3, .box4 {
+    background-color: var(--background-box3-color);
+    width: 45%;
+    padding: 1em;
+    text-align: center;
+}
+
+.box4 {
+    background-color: var(--background-box4-color);
+}
+
+ul {
+    text-align: justify;
+}

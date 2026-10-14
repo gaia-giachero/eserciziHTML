@@ -1,0 +1,78 @@
+:root {
+    --first-color: #54080A;
+    --header-font: Georgia, 'Times New Roman', Times, serif;
+    --text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --background-box-color: #eee;
+}
+
+h1 {
+    color: var(--first-color);
+    font-family: var(--header-font);
+    font-size: 3em;
+    text-align: center;
+    margin: 0.5em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family: var(--header-font);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0px;
+}
+
+p, li {
+    font-family: var(--text-font);
+    font-size: 1.1em;
+}
+
+nav {
+    background-color: var(--first-color);
+}
+
+/*selziona tutti gli elementi di tipo p solo se sono all'interno di un elemento di tipo nav*/
+nav p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6em;
+    color: white;
+}
+
+#container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 0.5em; 
+    justify-content: center;
+} 
+
+.box { 
+    width: 21vw; 
+    background-color: #eee; 
+    padding: 1em;
+}
+
+img {
+    width: 21vw;
+    height: auto;
+}
+
+.important {
+    font-weight: bold;
+}
+
+ul {
+    line-height: 1; 
+    list-style-type: circle;
+}
+
+h3 {
+    color: #54080A; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 18px;
+}

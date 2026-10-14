@@ -1,0 +1,117 @@
+h1 {
+    color: #E50126; 
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 60px; 
+    text-align: center; 
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    color: black;
+}
+
+/* unvisited link */
+li a:link, p a:link {
+color: #29B6F6;
+}
+/* visited link */
+li a:visited, p a:visited{
+color: #66BB6A;
+}
+/* moused over */
+li a:hover, p a:hover {
+color: #FF5722;
+}
+
+/* selected with keyboard*/
+li a:focus, p a:focus {
+color: #FF5722;
+}
+/* activated link */
+li a:active, p a:active, nav a:active {
+color: #673AB7;
+}
+
+nav {
+    background-color: #E50126;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none; 
+    color: white;
+}
+
+/* unvisited link */
+nav a:link {
+color: white;
+}
+/* visited link */
+nav a:visited {
+color: white;
+}
+/* moused over */
+nav a:hover {
+color: #29B6F6;
+}
+
+/* selected with keyboard*/
+nav a:focus {
+color: #29B6F6;
+}
+
+p, ul, ol {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#important {
+    font-weight: bold;
+}
+
+ul {
+    line-height: 1; 
+    list-style-type: circle;
+}
+
+h3 {
+    color: #E50126; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#external-font {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+div, footer {
+    padding: 10px; 
+    text-align: center;
+}
+
+footer a {
+    color: red;
+}
+
+div img {
+    width: 19%;
+}
+
+#sources { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}

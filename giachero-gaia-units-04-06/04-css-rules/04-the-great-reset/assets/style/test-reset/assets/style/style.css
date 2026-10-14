@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ===== MY CSS ===== */
+:root {
+    --first-color: #FFA560;
+    --header-font: Georgia, 'Times New Roman', Times, serif;
+    --text-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: var(--first-color);
+    font-family: var(--header-font);
+    font-size: 3em;
+    text-align: center;
+    margin: 0.6em 0 0.1em 0;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: var(--header-font);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+p, li {
+    font-family: var(--text-font);
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+#paragraph{
+    margin-top: 1em;
+}
+
+li {
+    list-style-type: disc;
+}
+
+nav {
+    background-color: var(--first-color);
+}
+
+nav p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6em;
+    color: white;
+}
+
+.container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 2em; 
+    justify-content: center;
+    margin-top: 0.9em;
+} 
+
+.box { 
+    width: 21vw; 
+    padding: 1em;
+    text-align: center;
+    margin: 1em;
+    margin-top: 0;
+}
+
+img {
+    width: 21vw;
+    height: auto;
+    margin-bottom: 0.2em;
+}
+
+.important {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1em;
+}
+
+ul {
+    line-height: 1.2; 
+    text-align: justify;
+}
+
+h3 {
+    color: var(--first-color);
+    font-family: var(--header-font);
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 1.3em;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  color: var(--first-color);
+  font-family: var(--header-font);
+}
+
+fieldset {
+  display: block;
+  font-family: var(--text-font);
+  border: 1px solid gray;
+}
+
+#fields {
+  width: 50%;
+  margin: 0 auto; /* centra il fieldset */
+  padding: 1em;
+}
+
+.form-row {
+  margin-bottom: 1em;
+}
+
+.form-row label {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.1em;
+  display: block; /* label sopra */
+  margin-bottom: 0.3em;
+}
+
+.form-row input,
+.form-row textarea {
+  display: block; /* barra sotto */
+  width: 100%;
+  padding: 0.7em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  font-family: var(--text-font);
+  font-size: 1em;
+}
+
+textarea {
+  height: 100px;
+}

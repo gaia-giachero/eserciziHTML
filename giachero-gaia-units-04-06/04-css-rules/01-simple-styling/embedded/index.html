@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- essential meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- page info -->
+        <title>Munich</title>
+        <meta name="description" content="This page content the simply itinerary of Munich">
+        <meta name="author" content="Gaia Giachero">
+
+        <!-- open graph - social media -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Itinerary of Munich">
+        <meta property="og:description" content="An itinerary for everyone, designed for those who want to organize a trip to Munich but don't know where to start">
+        <!-- DA FINIRE DI SISTEMARE -->
+        <meta property="og:image" content="https://yourwebsite.com/image.jpg">
+        <meta property="og:url" content="https://yourwebsite.com">
+
+        <style>
+            :root {
+                --h1-color: #3772c1;
+                --h3-color: #5b8fd5;
+                --header-font: Georgia, 'Times New Roman', Times, serif;;
+                --background-nav-color: #5b8fd5;
+                --nav-color: #c0d4ed;
+                --background-trip-color: #3772c180;
+                --background-box1-color: #5b8fd580;
+                --background-box2-color: #7bace780;
+                --background-box3-color: #97b5e980;
+                --background-box4-color: #a1c2e280;
+                --background-box5-color: #c0d4ed80;
+                --background-fix-color: #5b8fd5;
+            }
+
+            html {
+                scroll-padding-top: 185px;
+            }
+
+            body {
+                margin: 0px;
+                padding-top: 180px;
+            }
+
+            .fix {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 180px;
+                background-color: var(--background-fix-color);
+            }
+
+            main {
+                margin-left: 5em;
+                margin-right: 5em;
+            }
+
+            p, ul li {
+                font-size: 1.2em;
+            }
+
+            h1 {
+                color: var(--h1-color);
+                font-family: var(--header-font); 
+                font-size: 60px; 
+                text-align: center; 
+                margin: 0px;
+                margin-top: 0.3em;
+                letter-spacing: 0.2em;
+                text-shadow: 0px 0px 10px rgb(255, 255, 255);
+            }
+
+            h2 {
+                font-family: var(--header-font);
+                font-style: italic;
+                font-weight: lighter;
+                font-size: 1.3em;
+                text-align: center;
+                margin-top: 0.2em;
+                margin-bottom: 1em;
+            }
+
+            h3 {
+                color: var(--h3-color); 
+                font-family: var(--header-font);
+                text-align: center;
+            }
+
+            h5 {
+                font-size: 1.2em;
+                margin: 0.5em;
+            }
+
+            nav {
+                background-color: var(--background-nav-color);
+                margin-top: 0.5em;
+            }
+
+            nav ul {
+                list-style: none; 
+                display: flex; 
+                justify-content: space-evenly; 
+                align-items: center;
+                padding: 0.5em;
+                margin-bottom: 0px;
+                border-top: 1px solid rgba(255, 255, 255, 0.5);
+            }
+
+            nav a {
+                text-decoration: none; 
+                color: var(--nav-color);
+                font-weight: bold;
+                letter-spacing: 0.2em;
+            }
+
+            .images {
+                padding: 10px; 
+                text-align: center;
+            }
+
+            .images img {
+                width: 19%;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+
+            .box-trip {
+                background-color: var(--background-trip-color);
+                width: 95%;
+                padding: 1em;
+                text-align: center;
+            }
+
+            .box1, .box2, .box5 {
+                background-color: var(--background-box1-color);
+                width: 30%;
+                padding: 0.5em;
+                text-align: center;
+            }
+
+            .box2 {
+                background-color: var(--background-box2-color);
+            }
+
+            .box5 {
+                background-color: var(--background-box5-color);
+            }
+
+            .box3, .box4 {
+                background-color: var(--background-box3-color);
+                width: 45%;
+                padding: 1em;
+                text-align: center;
+            }
+
+            .box4 {
+                background-color: var(--background-box4-color);
+            }
+
+            ul {
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- main content -->
+        <div class="fix">
+            <div class="text">
+                <h1>MUNICH</h1>
+                <h2>5 Days in Munich</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#trip">TRIP</a></li>
+                    <li><a href="#day1">DAY 1</a></li>
+                    <li><a href="#day2">DAY 2</a></li>
+                    <li><a href="#day3">DAY 3</a></li>
+                    <li><a href="#day4">DAY 4</a></li>
+                    <li><a href="#day5">DAY 5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="images">
+            <img src="./assets/img/munich1.jpg">
+            <img src="./assets/img/munich2.jpg">
+            <img src="./assets/img/munich3.jpg">
+            <img src="./assets/img/munich4.jpg">
+            <img src="./assets/img/munich5.jpg">
+        </div>
+        <hr />
+        <main>
+            <article id="trip">
+                <h3>TRIP</h3>
+                <div class="container">
+                    <div class="box-trip">
+                        <ul>
+                            <li>Travel from Torino to Munich by bus (7-8 hours)</li>
+                            <li>One full day in Dachau</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <hr />
+            <article id="day1">
+                <h3>DAY 1 - ARRIVAL & EASY CITY WALK</h3>
+                <div class="container">
+                    <div class="box1">
+                        <h5>MORNING</h5>
+                        <p>You arrive in Munich by bus.</p>
+                    </div>
+                    <div class="box1">
+                        <h5>AFTERNOON</h5>
+                        <ul>
+                            <li>Marienplatz (main square)</li>
+                            <li>Neues Rathaus (New Town Hall with the clock show)</li>
+                            <li>Frauenkirche (big church, symbol of the city)</li>
+                            <li>St. Peter's Church (you can go up the tower for a nice view)</li>
+                        </ul>
+                    </div>
+                    <div class="box1">
+                        <h5>EVENING</h5>
+                        <p>Dinner at Hofbräuhaus München (traditional Bavarian food)</p>
+                    </div>
+                </div>
+            </article>
+            <hr />
+            <article id="day2">
+                <h3>DAY 2 - ROYAL MUNICH & PARK</h3>
+                <div class="container">
+                    <div class="box2">
+                        <h5>MORNING</h5>
+                        <p>Visit Residenz München (old royal palace, very beautiful inside)</p>
+                    </div>
+                    <div class="box2">
+                        <h5>AFTERNOON</h5>
+                        <p>Walk in Englischer Garten (one of the biggest city parks in Europe). You can:</p>
+                        <ul>
+                            <li>Relax</li>
+                            <li>See surfers in the river</li>
+                            <li>Drink a beer in the beer garden</li>
+                        </ul>
+                    </div>
+                    <div class="box2">
+                        <h5>EVENING</h5>
+                        <p>Have dinner in a beer garden or in a traditional restaurant near the English Garden. Good places are:</p>
+                        <ul>
+                            <li>Chinesischer Turm</li>
+                            <li>Seehaus im Englischen Garten</li>
+                            <li>After dinner, go back to the hotel and relax</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <hr />
+            <article id="day3">
+                <h3>DAY 3 - DACHAU MEMORIAL</h3>
+                <div class="container">
+                    <div class="box3">
+                        <h5>MORNING</h5>
+                        <p>VIsit the Dachau Memorial. How to go:</p>
+                        <ul>
+                            <li>Take S-Bahn S2 from Munich (about 20 minutes)</li>
+                            <li>Then bus 726</li>
+                        </ul>
+                        <p>Visit time: about 4-5 hours. It is a serous and emotional place. Take your time.</p>
+                    </div>
+                    <div class="box3">
+                        <h5>AFTERNOON AND EVENING</h5>
+                        <p>Return to Munich in afternoon. Quiet evening.</p>
+                    </div>
+                </div>
+            </article>
+            <hr />
+            <article id="day4">
+                <h3>DAY 4 - PALACE OR FAIRYTALE CASTLE</h3>
+                <div class="container">
+                    <div class="box4">
+                        <h5>MORNING</h5>
+                        <ul>
+                            <li>Option 1 (in Munich): Visit Castello di Nymphenburg (big palace with beautiful gardens)</li>
+                            <li>Option 2 (full-day trip): Go to Castello di Neuschwanstein (the famous fairytale castle, about 2 hours from Munich)</li>
+                        </ul>
+                        <p>If you choose Neuschwanstein, leave early in the morning.</p>
+                    </div>
+                    <div class="box4">
+                        <h5>AFTERNOON AND EVENING</h5>
+                        <ul>
+                        <li>If you choose Nymphenburg:</li>  
+                            <p>Walk in the palace gardens. Visit the Carriage Museum and the Amalienburg pavilion. Later, go to the Neuhausen area for a drink or dinner.</p>
+                        <li>If you choose Neuschwanstein:</li>  
+                            <p>After the castle visit, stop in the village of Hohenschwangau for a break. Then return to Munich in the late afternoon. 
+                                In the evening, have dinner in the city center, near Karlsplatz or Sendlinger Tor.</p>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <hr />
+            <article id="day5">
+                <h3>DAY 5 - MUSEUM OR BMW</h3>
+                <div class="container">
+                    <div class="box5">
+                        <h5>MORNING</h5>
+                        <ul>
+                            <li>Art option:</li>
+                            <ul class="list">
+                                <li>Alte Pinakothek</li>
+                                <li>Neue Pinakothek</li>
+                            </ul>
+                            <li>Modern option:</li>
+                            <ul class="list">
+                                <li>BMW Welt</li>
+                                <li>Museo BMW</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="box5">
+                        <h5>AFTERNOON</h5>
+                        <p>Shopping in the city center.</p>
+                    </div>
+                    <div class="box5">
+                        <h5>EVENING</h5>
+                        <p>After your day in museums and shopping, pick up your bags. 
+                            Have a quick dinner in the city center (the area near Hauptbahnhof is convenient). Then go to the bus station for your trip back to Turin.</p>
+                    </div>
+                </div>
+            </article>
+            <hr />
+        </main>
+        <div class="images">
+            <img src="./assets/img/dachau1.jpg">
+            <img src="./assets/img/dachau2.jpg">
+            <img src="./assets/img/munich6.jpg">
+            <img src="./assets/img/munich7.jpg">
+            <img src="./assets/img/munich8.jpg">
+        </div>
+    </body>
+</html>
