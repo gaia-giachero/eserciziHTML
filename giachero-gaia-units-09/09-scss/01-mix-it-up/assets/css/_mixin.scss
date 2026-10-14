@@ -1,0 +1,170 @@
+// pagina scss dove vengono definite tutte le regole per la struttura css
+// questa pagina serve per non dover ripetere innumerevoli volte queste caratteristiche e per rendere il più modulare possibile il progetto
+
+@use 'variables';
+
+// VALUES BASES
+* {
+    box-sizing: border-box;
+}
+
+@mixin background($bkg){
+    background-color: $bkg;
+    margin: variables.$margin-base;
+}
+
+@mixin margin{
+    margin: variables.$margin-base;
+}
+
+@mixin padding{
+    padding: variables.$padding-base;
+}
+
+// TITLE
+@mixin titolo{
+    color: variables.$primary-text;
+    font-family: variables.$font-family-title;
+    letter-spacing: 1em;
+    font-size: variables.$font-size-title;
+    font-weight: 700;
+    text-align: center;
+    @include margin;
+    @media screen and (max-width: variables.$breakpoint-tablet) {
+        letter-spacing: 0.5em;
+    }
+    @media screen and (max-width: variables.$breakpoint-small-device) {
+        letter-spacing: 0.3em;
+    }
+    @media screen and (max-width: variables.$breakpoint-mobile-l) {
+        letter-spacing: 0.2em;
+    }
+    @media screen and (max-width: variables.$breakpoint-mobile-s) {
+        letter-spacing: 0;
+    }
+}
+
+// INTRODUCTION
+@mixin introduzione{
+    @include background(variables.$background-section);
+    @include margin;
+    width: 100%;
+    text-align: center;
+}
+
+@mixin intro-text{
+    font-family: variables.$font-family-paragraph;
+    color: variables.$secondary-text;
+    display: inline-block; 
+    vertical-align: middle;
+    text-align: justify;
+    font-size: variables.$font-size-introduction;
+    width: 35%;
+    margin: 0 5%;
+    white-space: normal;
+    @media screen and (max-width: variables.$breakpoint-tablet) {
+        width: 60%;
+        margin: 3% 4%;
+    }
+    @media screen and (max-width: variables.$breakpoint-small-device) {
+        width: 60%;
+        margin: 3.5% 4%;
+    }
+    @media screen and (max-width: variables.$breakpoint-mobile-l) {
+        width: 80%;
+        margin: 4% 4%;
+    }
+    @media screen and (max-width: variables.$breakpoint-mobile-s) {
+        width: 80%;
+        margin: 4.5% 4%;
+    }
+}
+
+@mixin intro-img{
+    @include margin;
+    display: inline-block; 
+    vertical-align: middle; 
+    width: 25%;
+    border-radius: variables.$border-radius-img;
+    @media screen and (max-width: variables.$breakpoint-tablet) {
+        width: 30%;
+        border-radius: 35px;
+    }
+    @media screen and (max-width: variables.$breakpoint-small-device) {
+        width: 30%;
+        border-radius: 20px;
+    }
+    @media screen and (max-width: variables.$breakpoint-mobile-l) {
+        display: none;
+    }
+    @media screen and (max-width: variables.$breakpoint-mobile-s) {
+        display: none;
+    }
+}
+
+// SECTION CARD
+@mixin section-card{
+    width: 100%;
+    text-align: center;
+}
+
+@mixin card{
+    @include margin;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: variables.$margin-card;
+    @media screen and (max-width: variables.$breakpoint-small-device) {
+        display: block;
+        width: 80%;
+        margin: 10% auto;
+    }
+    @media screen and (max-width: variables.$breakpoint-mobile-l) {
+        display: block;
+        width: 80%;
+        margin: 10% auto;
+    }
+    @media screen and (max-width: variables.$breakpoint-mobile-s) {
+        display: block;
+        width: 80%;
+        margin: 10% auto;
+    }
+}
+
+@mixin img-card{
+    width: 100%;
+    border-radius: variables.$border-radius-img;
+}
+
+@mixin text-card{
+  font-family: variables.$font-family-paragraph;
+  color: variables.$third-text;
+  vertical-align: middle;
+  text-align: justify;
+  font-size: variables.$font-size-card;
+  @media screen and (max-width: variables.$breakpoint-small-device) {
+    margin: 0 0 3% 0;
+  }
+  @media screen and (max-width: variables.$breakpoint-mobile-l) {
+    margin: 0 0 3% 0;
+  }
+  @media screen and (max-width: variables.$breakpoint-mobile-s) {
+    margin: 0 0 3% 0;
+  }
+}
+
+// BUTTON CARD
+@mixin button {
+  background-color: variables.$background-button;
+  border-radius: variables.$border-radius-button;
+  border: variables.$border-btn;
+  color: variables.$btn-text;
+  font-weight: 700;
+  cursor: pointer;
+  @include padding;
+}
+
+@mixin btn-hover {
+  background-color: variables.$background-button-hover;
+  color: variables.$btn-text-hover;
+}

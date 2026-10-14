@@ -1,0 +1,41 @@
+// file scss principale dove verranno richiamati eventuali proprietà di file esterni
+// questo file sarà quello che verrà "convertito" in CSS puro tramite il traspilatore
+
+@use 'variables';
+@use 'mixin';
+
+body{
+    @include mixin.background(variables.$background);
+    header{
+        @include mixin.titolo;
+    }
+    
+    section#intro{
+        @include mixin.introduzione;
+        p{
+            @include mixin.intro-text;
+        }
+        img{
+            @include mixin.intro-img;
+        }
+    }
+    
+    section#opzioni{
+        @include mixin.section-card;
+        article{
+            @include mixin.card;
+            img{
+                @include mixin.img-card;
+            }
+            p{
+                @include mixin.text-card;
+            }
+        }
+        button{
+            @include mixin.button;
+            &:hover{
+                @include mixin.btn-hover;
+            }
+        }
+    }
+}

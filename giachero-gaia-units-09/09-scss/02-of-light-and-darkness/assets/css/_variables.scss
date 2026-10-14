@@ -1,0 +1,58 @@
+// ====== TEMA ======
+$theme: "dark";
+
+// ====== COLORI BASE ======
+// LIGHT
+$background-lgt: #CFDCE2;
+$background-section-lgt: #25978D;
+
+$primary-text-lgt: #196A63;
+$secondary-text-lgt: #CFDCE2;
+$third-text-lgt: #072E3D;
+
+// DARKNESS
+$background-drk: #072E3D;
+$background-section-drk: #B4DBEC;
+
+$primary-text-drk: #CFDCE2;
+$secondary-text-drk: #196A63;
+$third-text-drk: #CFDCE2;
+
+// ====== SEMANTIC VARIABLES ======
+$background: if($theme == "light", $background-lgt, $background-drk);
+$background-sct: if($theme == "light", $background-section-lgt, $background-section-drk);
+
+$text-title: if($theme == "light", $primary-text-lgt, $primary-text-drk);
+$scd-text: if($theme == "light", $secondary-text-lgt, $secondary-text-drk);
+$trd-text: if($theme == "light", $third-text-lgt, $third-text-drk);
+
+// BUTTON
+$background-button: if($theme == "light", $background-lgt, $background-drk);
+$background-button-hover: if($theme == "light", $background-section-lgt, $background-section-drk);
+
+$btn-text: if($theme == "light", $background-section-lgt, $background-lgt);
+$btn-text-hover: if($theme == "light", $background-lgt, $background-section-lgt);
+
+// BORDER
+$border-btn: 2px solid if($theme == "light", $background-section-lgt, $background-section-drk);
+
+// ====== EQUAL VARIABLES ======
+$padding-base: 0.8rem;
+$margin-base: 2% 0;
+$margin-card: 1%;
+
+$font-family-title: 'Garamond', serif;
+$font-family-paragraph: 'Trebuchet MS', sans-serif;
+
+$font-size-title: 1.2em;
+$font-size-introduction: 1.2em;
+$font-size-card: 1em;
+
+$border-radius-img: 40px;
+$border-radius-button: 60px;
+
+// BREAKPOINTS
+$breakpoint-mobile-s: 320px;
+$breakpoint-mobile-l: 480px;
+$breakpoint-small-device: 576px;
+$breakpoint-tablet: 768px;

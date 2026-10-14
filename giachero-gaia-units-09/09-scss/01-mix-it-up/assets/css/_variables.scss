@@ -1,0 +1,40 @@
+// pagina scss dove vengono definiti i colori di base, i font e le spaziature.
+// questa pagina serve per non dover ripetere innumerevoli volte queste caratteristiche e per rendere il più modulare possibile il progetto
+
+// BACKGROUND
+$background: #CFDCE2;
+$background-section: #25978D;
+
+// TEXT
+$primary-text: #196A63;
+$secondary-text: $background;
+$third-text: #072E3D;
+
+// FONT 
+$font-family-title: 'Garamond', serif;
+$font-family-paragraph: 'Trebuchet MS', sans-serif; 
+$font-size-title: 1.2em;
+$font-size-introduction: 1.2em;
+$font-size-card: 1em;
+
+// BUTTON
+$background-button: $background;
+$background-button-hover: $background-section;
+$btn-text: $background-section;
+$btn-text-hover: $background;
+
+// BORDER
+$border-btn: 2px solid $background-section;
+$border-radius-img: 40px;
+$border-radius-button: 60px;
+
+// PADDING E MARGIN base
+$padding-base: 0.8rem;
+$margin-base: 2% 0;
+$margin-card: 1%;
+
+// BREAKPOINTS
+$breakpoint-mobile-s: 320px;
+$breakpoint-mobile-l: 480px;
+$breakpoint-small-device: 576px;
+$breakpoint-tablet: 768px;
